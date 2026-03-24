@@ -37,7 +37,7 @@ def extract_text(file_path):
 def matchresume():
     return render_template('matchresume.html')
 
-@app.route('/matcher', methods=['POST'])
+@app.route('/matcher', methods=['GET', 'POST'])
 def matcher():
     if request.method == 'POST':
         job_description = request.form['job_description']
@@ -73,4 +73,4 @@ def matcher():
 if __name__ == '__main__':
     if not os.path.exists(app.config['UPLOAD_FOLDER']):
         os.makedirs(app.config['UPLOAD_FOLDER'])
-    app.run(debug=False)
+    app.run(debug=True)
