@@ -1,0 +1,1 @@
+# UI Redesign to Fresh Light Theme\n\n- [x] 1. Create TODO.md (done)\n- [ ] 2. Update static/style.css with light palette, backgrounds, shadows\n- [ ] 3. Test UI readability and animations\n- [ ] 4. Complete task\n

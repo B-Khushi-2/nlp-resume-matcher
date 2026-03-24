@@ -38,24 +38,20 @@
         </div>
         <span class="logo-text">Resume<span class="logo-accent">AI</span></span>
       </div>
-      <div class="header-badge">NLP Powered</div>
     </header>
 
     <!-- Main Content -->
     <main class="main">
       <!-- Hero Section -->
       <section class="hero">
-        <div class="hero-tag">
-          <span class="tag-dot"></span>
-          Intelligent Matching Engine
-        </div>
         <h1 class="hero-title">
           Find Your <span class="title-highlight">Best Fit</span
           ><br />Candidates Instantly
         </h1>
+
         <p class="hero-sub">
-          Paste a job description, upload resumes — our TF-IDF cosine similarity
-          engine ranks the top matches in seconds.
+          Paste a job description, upload resumes — we rank the top matches in
+          seconds.
         </p>
       </section>
 
@@ -214,7 +210,8 @@
             Results
           </div>
           <h2 class="results-title">{{ message }}</h2>
-          <p class="results-sub">Ranked by TF-IDF cosine similarity score</p>
+
+          <p class="results-sub">Top matches ranked by relevance score</p>
         </div>
 
         <div class="results-grid">
@@ -247,14 +244,6 @@
       </section>
       {% endif %}
     </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <p>
-        Built with Flask · TF-IDF · Cosine Similarity &nbsp;|&nbsp; NLP Resume
-        Matcher
-      </p>
-    </footer>
 
     <script src="{{ url_for('static', filename='script.js') }}"></script>
   </body>
